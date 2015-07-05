@@ -25,8 +25,8 @@ def all_odd(number_list):
         if (number_list[i]%2) != 0:
            odd_list.append(number_list[i])  
     return odd_list
-all_odd([1,2,7,-5])
-all_odd([2, -6, 8])  
+print all_odd([1,2,7,-5])
+print all_odd([2, -6, 8])  
 
 
 def all_even(number_list):
@@ -44,8 +44,8 @@ def all_even(number_list):
         if (number_list[i]%2) == 0:
            even_list.append(number_list[i])  
     return even_list
-all_even([2,6,-1,-2])
-all_even([-1, 3, 5])
+print all_even([2,6,-1,-2])
+print all_even([-1, 3, 5])
 
 
 def print_indeces(my_list):
@@ -86,8 +86,8 @@ def long_words(word_list):
         if len(word_list[i]) > 4:
             words_longer_than_4chars.append(word_list[i])
     return words_longer_than_4chars
-long_words(["hello", "hey", "spam", "spam", "bacon", "bacon"])
-long_words(["all", "are", "tiny"])
+print long_words(["hello", "hey", "spam", "spam", "bacon", "bacon"])
+print long_words(["all", "are", "tiny"])
           
 
 
@@ -183,7 +183,7 @@ def word_lengths(word_list):
     for i in range(len(word_list)):   
       len_list.append(len(word_list[i]))
     return len_list
-word_lengths(["hello", "hey", "hello", "spam"])     
+print word_lengths(["hello", "hey", "hello", "spam"])     
 
 
 def sum_numbers(number_list):
@@ -208,8 +208,8 @@ def sum_numbers(number_list):
         for x in range(len(number_list)):
             total  += number_list[x]
         return total
-sum_numbers([1,2,3,10])
-sum_numbers([])
+print sum_numbers([1,2,3,10])
+print sum_numbers([])
 
 def mult_numbers(number_list):
     """Return product (result of multiplication) of the numbers in the list.
@@ -231,14 +231,14 @@ def mult_numbers(number_list):
     """
     mult = 1
     if number_list == []:
-       return 1
+       print '1'
     else:    
         for x in range(len(number_list)):
             mult *= number_list[x]
         return mult
-mult_numbers([1,2,3])
-mult_numbers([10,20,0,50])
-mult_numbers([])
+print mult_numbers([1,2,3])
+print mult_numbers([10,20,0,50])
+print mult_numbers([])
 
 def join_strings(word_list):
     """Return a string of all input strings joined together.
@@ -280,7 +280,7 @@ def average(number_list):
         total  += number_list[x]
         average = total/float(len(number_list))
     return average
-average([2,12,3])
+print average([2,12,3])
 
 
 
@@ -305,7 +305,6 @@ def advanced_join_strings(list_of_words):
     adding_strings = ''
     for i in range(len(list_of_words)):
         adding_strings += list_of_words[i]
-        #print len(list_of_words)
         if i != len(list_of_words)-1:
             adding_strings = adding_strings +', '
 
